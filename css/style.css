@@ -267,5 +267,6 @@ div.about-skills ul li a.success {
         width:auto;
         max-width:500px;
         margin:0;
+        margin-bottom:50px;
     }
 }
