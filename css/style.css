@@ -67,6 +67,22 @@ div.header-info h3 {
     line-height:1.5em;
     color:#fff;
 }
+div.about {
+    margin:0 auto;
+    padding:14px;
+    color:#ddd;
+}
+div.social-media-bar {
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:20px;
+    margin:20px auto;
+}
+div.social-media-image img {
+        height:50px;
+        aspect-ratio:1;
+    }
 div.row {
     display:flex;
     flex-direction:column;
@@ -133,6 +149,14 @@ div.portfolio-header p {
         padding:20px;
         top:auto;
         left:auto;
+    }
+    div.about {
+        width:60%;
+    }
+    div.social-media-bar {
+        flex-direction:row;
+        justify-content:center;
+        margin-bottom:50px;
     }
     div.row {
         flex-direction:row;
