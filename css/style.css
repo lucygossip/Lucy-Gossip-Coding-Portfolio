@@ -1,0 +1,150 @@
+*, *::before, *::after {
+    box-sizing:border-box;
+}
+body {
+    margin:0;
+    padding:0;
+    font-family:georgia;
+    font-size:1rem;
+    background:#222;
+}
+h1, h2, h3 {
+    margin:0;
+    padding:0;
+}
+h1, h2 {
+    line-height:1.5em;
+}
+h3 {
+    font-family:sans-serif;
+}
+img {
+    max-width:100%;
+    display:block;
+}
+a {
+    cursor:pointer;
+    color:#fff;
+    text-decoration:none;
+}
+a:hover {
+    text-decoration:underline;
+}
+div.header-container {
+    position:relative;
+    overflow:hidden;
+    margin-bottom:50px;
+}
+div.header-image {
+    max-height:600px;
+    overflow:hidden;
+    position:relative;
+    background:#333;
+}
+div.header-text {
+    background:#333;
+    padding:14px;
+    text-align:center;
+}
+div.header-text h1 {
+    font-style:italic;
+    color:#ddd;
+}
+div.header-text h2 {
+    color:#ff0;
+    font-size:1.2rem;
+}
+div.header-info {
+    position:absolute;
+    top:10px;
+    left:10px;
+    background:#333;
+    padding:0.5em;
+}
+div.header-info h3 {
+    font-size:1rem;
+    letter-spacing:0.3em;
+    line-height:1.5em;
+    color:#fff;
+}
+div.row {
+    display:flex;
+    flex-direction:column;
+    margin:0 auto;
+    gap:50px;
+}
+div.col {
+    height:auto;
+    width:90%;
+    border-radius:15px;
+    margin:0 auto;
+    background:#000;
+}
+div.col:nth-child(2n-1) {
+    border:10px solid #b70;
+}
+div.col:nth-child(2n) {
+    border:10px solid #07b;
+}
+div.col a img.portfolio-image {
+    border-radius:5px;
+}
+img.portfolio-image {
+    width:100%;
+}
+div.portfolio-header {
+    text-align:center;
+    border-top:2px solid #bbb;
+    padding:30px;
+    line-height:1.5em;
+}
+
+div.col:nth-child(2n-1) a div.portfolio-header {
+    border-top:2px solid #b70;
+}
+div.col:nth-child(2n) a div.portfolio-header {
+    border-top:2px solid #07b;
+}
+
+div.portfolio-header h3 {
+    color:#ff0;
+}
+div.portfolio-header p {
+    color:#fff;
+}
+
+
+/*----- DESKTOP -----*/
+
+@media only screen and (min-width:800px) {
+    
+    div.header-image img {
+        text-align:left;
+        height:112px;
+    }
+    div.header-container {
+        display:flex;
+    }
+    div.header-text {
+        flex-grow:1;
+    }
+    div.header-info {
+        position:relative;
+        padding:20px;
+        top:auto;
+        left:auto;
+    }
+    div.row {
+        flex-direction:row;
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+}
+@media only screen and (min-width:1000px) {
+    div.row {
+        justify-content:space-around;
+    }
+    div.col {
+        width:45%;
+    }
+}
