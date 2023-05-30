@@ -1,3 +1,17 @@
+/*----- CONTENTS -----
+
+    1. DEFAULTS
+    2. HEADER
+    3. SOCIAL MEDIA BAR
+    4. NAVBAR
+    5. MAIN
+        5.1 ABOUT
+        5.2 PORTFOLIO
+        5.3 CONTACT
+    6. DESKTOP
+*/
+
+/*----- 1. DEFAULTS -----*/
 *, *::before, *::after {
     box-sizing:border-box;
 }
@@ -57,6 +71,9 @@ hr {
     height:3px;
     background:#111;
 }
+
+
+/*----- 2. HEADER -----*/
 div.header-container {
     position:relative;
     overflow:hidden;
@@ -93,6 +110,8 @@ div.header-info h3 {
     line-height:2em;
     color:#fff;
 }
+
+/*----- 3. SOCIAL MEDIA BAR -----*/
 div.social-media-bar {
     display:flex;
     flex-direction:column;
@@ -110,6 +129,8 @@ div.social-media-image img:hover {
     box-shadow:0 0 5px 1px #ddd;
     transition:0.3s ease-in;
 }
+
+/*----- 4. NAVBAR -----*/
 div.navbar {
     background:var(--second-background-color);
     color:var(--light-font-color);
@@ -131,6 +152,8 @@ div.navbar ul li {
 div.navbar ul li a {
     padding:10px;
 }
+
+/*----- 5. MAIN -----*/
 main {
     
     margin:0 auto;
@@ -153,49 +176,8 @@ div.col {
     margin:0 10px;
     box-shadow:var(--main-box-shadow);
 }
-div.col a img.portfolio-image {
-    border-radius:5px;
-}
-img.portfolio-image {
-    width:100%;
-}
-div.portfolio-header {
-    text-align:center;
-    border-top:2px solid #bbb;
-    padding:5px;
-    line-height:1.5em;
-}
 
-section#html-and-css div.row div.col {
-    border:7px solid var(--border-color-one);
-}
-section#html-and-css div.row div.col div.portfolio-header {
-    border-top:2px solid var(--border-color-one);
-}
-
-section#javascript div.row div.col {
-    border:7px solid var(--border-color-two);
-}
-section#javascript div.row div.col div.portfolio-header {
-    border-top:2px solid var(--border-color-two);
-}
-
-section#bootstrap div.row div.col {
-    border:7px solid var(--border-color-one);
-}
-section#bootstrap div.row div.col div.portfolio-header {
-    border-top:2px solid var(--border-color-one);
-}
-
-div.portfolio-header h3 {
-    color:#ff0;
-    font-size:1rem;
-}
-div.portfolio-header p {
-    color:#fff;
-    font-size:0.8rem;
-    font-family:sans-serif;
-}
+/*----- 5.1 ABOUT -----*/
 div.about-flex {
     display:flex;
     flex-direction:column;
@@ -247,6 +229,52 @@ div.about-skills ul li a.success:hover {
     background:transparent;
     text-decoration:underline;
 }
+
+/*----- 5.2 PORTFOLIO -----*/
+
+div.col a img.portfolio-image {
+    border-radius:5px;
+}
+img.portfolio-image {
+    width:100%;
+}
+div.portfolio-header {
+    text-align:center;
+    border-top:2px solid #bbb;
+    padding:5px;
+    line-height:1.5em;
+}
+section#html-and-css div.row div.col {
+    border:7px solid var(--border-color-one);
+}
+section#html-and-css div.row div.col div.portfolio-header {
+    border-top:2px solid var(--border-color-one);
+}
+
+section#javascript div.row div.col {
+    border:7px solid var(--border-color-two);
+}
+section#javascript div.row div.col div.portfolio-header {
+    border-top:2px solid var(--border-color-two);
+}
+section#bootstrap div.row div.col {
+    border:7px solid var(--border-color-one);
+}
+section#bootstrap div.row div.col div.portfolio-header {
+    border-top:2px solid var(--border-color-one);
+}
+
+div.portfolio-header h3 {
+    color:#ff0;
+    font-size:1rem;
+}
+div.portfolio-header p {
+    color:#fff;
+    font-size:0.8rem;
+    font-family:sans-serif;
+}
+
+/*----- 5.3 CONTACT -----*/
 form#contact-form fieldset {
     padding:30px;
     border:none;
@@ -271,7 +299,7 @@ div.form-control input:focus, div.form-control textarea:focus {
     outline:1px solid #778;
 }
 
-/*----- DESKTOP -----*/
+/*----- 6. DESKTOP -----*/
 
 @media only screen and (min-width:1000px) {
     div.header-image {
