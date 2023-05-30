@@ -30,7 +30,66 @@
             </div>
         </section>
         
-        <main>
+        <nav>
+            <div class="navbar">
+            <ul>
+                <li><a href="#about/" onclick="openTab('about')">About</a></li>
+                <li><a href="#portfolio/" onclick="openTab('portfolio')">Portfolio</a></li>
+                <li><a href="#contact/" onclick="openTab('contact')">Contact</a></li>
+            </ul>
+                </div>
+        </nav>
+        
+        <div class="tab" id="about">
+            <main>
+        <section id="about">
+            <div class="about-flex">
+    
+            <div class="light-container">
+                <div class="about-image"><img alt="Profile Image" src="img/IMG_2944%20copy%202.jpg" /></div>
+            <div class="about">
+                <h2>About:</h2>
+                <p>Hello! I am a musician with a passion for code. My love of coding started with a desire to make things look pretty on a webpage, and developed into taking the next steps to become a professional.<p>
+                
+                <p>I started as a coding hobbyist and have been developing my skills over time to enter into a job in web design. As someone who comes from a musical background, I possess volumes of creativity and am especially interested in front-end development. Having been a staff member on several websites, I am great at working with teams of people and have excellent communication skills.</p>
+            </div>  
+            </div>
+            <div class="light-container">
+                <div class="about-skills">
+                    <h2>Certificates:</h2>
+                    <ul>
+                        <li><b>Devslopes</b> (In progress)<br>
+                            Beginner Full Stack Web Development: HTML, CSS, React and Node
+</li>
+                        <li><b>Code Academy</b> - <a class="success" href="https://cdpn.io/glindarose/fullpage/rNqJoyb?nocache=true&view=#" target="_blank">Complete</a><br>
+                        Learn JavaScript</li>
+                        <li><b>Code Academy</b> - <a class="success" href="https://cdpn.io/glindarose/fullpage/rNqJoyb?nocache=true&view=#" target="_blank">Complete</a><br>
+                        Learn Bootstrap
+                        </li>
+                        <li><b>Free Code Camp</b> - <a class="success" href="https://cdpn.io/glindarose/fullpage/rNqJoyb?nocache=true&view=#" target="_blank">Complete</a><br>Responsive Web Design</li>
+                    </ul>
+                    </div>          
+                </div>
+            <div class="light-container">
+            <div class="about-skills">
+                <h2>Skills:</h2>
+                <ul>
+                <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>Bootstrap</li>
+                    <li>Git Version Control</li>
+                </ul>
+                </div>
+                </div>
+                </div>
+     
+        </section>
+            </main>
+            </div>
+        
+            <div class="tab" id="portfolio" style="display:none">   
+                <main>
             <section id="html-and-css">
                 <div class="section-header">
                     <h4>HTML and CSS</h4>           
@@ -171,48 +230,40 @@
             
             <hr>
            
-        </main>
-        
-        <section id="about">
-            <div class="about-flex">
-                <div class="about-container">
-                <div class="about-skills">
-                    <h2>Certificates:</h2>
-                    <ul>
-                        <li><b>Devslopes</b> (In progress)<br>
-                            Beginner Full Stack Web Development: HTML, CSS, React and Node
-</li>
-                        <li><b>Code Academy</b> - <a class="success" href="https://cdpn.io/glindarose/fullpage/rNqJoyb?nocache=true&view=#" target="_blank">Complete</a><br>
-                        Learn JavaScript</li>
-                        <li><b>Code Academy</b> - <a class="success" href="https://cdpn.io/glindarose/fullpage/rNqJoyb?nocache=true&view=#" target="_blank">Complete</a><br>
-                        Learn Bootstrap
-                        </li>
-                        <li><b>Free Code Camp</b> - <a class="success" href="https://cdpn.io/glindarose/fullpage/rNqJoyb?nocache=true&view=#" target="_blank">Complete</a><br>Responsive Web Design</li>
-                    </ul>
-                    </div>          
-                </div>
-            <div class="about-container">
-                <div class="about-image"><img alt="Profile Image" src="img/IMG_2944%20copy%202.jpg" /></div>
-            <div class="about">
-                <h2>About:</h2>
-                <p>Hello! I am a musician with a passion for code. My love of coding started with a desire to make things look pretty on a webpage, and developed into taking the next steps to become a professional.<p>
-            </div>  
+        </main>      
             </div>
-                <div class="about-container">
-            <div class="about-skills">
-                <h2>Skills:</h2>
-                <ul>
-                <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JavaScript</li>
-                    <li>Bootstrap</li>
-                    <li>Git Version Control</li>
-                </ul>
+    
+        
+        <div class="tab" id="contact" style="display:none">
+            <main>
+                <div class="light-container">
+                    <h2>Contact</h2>
+                    <p>If you wish to get in touch, please send your enquiry by using the form below.</p>
+                    
+                    <form action="" id="contact-form">
+                        <fieldset>
+                            <div class="form-control">
+                                <label>Name:</label>
+                                <input type="text">
+                            </div>
+                            <div class="form-control">
+                                <label>Email:</label>
+                                <input type="email">
+                            </div>
+                            <div class="form-control">
+                                <label>Message:</label>
+                                <textarea></textarea>
+                            </div>
+                            <div class="form-control">
+                                <input type="submit" value="Send Message">
+                            </div>
+                        </fieldset>
+                    </form>
+                    
+                    
                 </div>
-                </div>
-                </div>
-     
-        </section>
+            </main>
+        </div>
     </body>
     <script type="text/javascript" src="js/myscripts.js"></script>
 </html>
