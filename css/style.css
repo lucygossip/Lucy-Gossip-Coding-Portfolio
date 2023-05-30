@@ -46,7 +46,6 @@ a {
     cursor:pointer;
     color:#fff;
     text-decoration:none;
-    padding:10px;
 }
 a:hover {
     background:rgba(40,40,50,0.5);
@@ -128,6 +127,9 @@ div.navbar ul {
 div.navbar ul li {
     margin:1em;
     font-size:1.5rem;
+}
+div.navbar ul li a {
+    padding:10px;
 }
 main {
     
@@ -261,6 +263,9 @@ div.form-control input[type=text], div.form-control input[type=email], div.form-
 div.form-control input[type=submit] {
     display:block;
     margin:0 auto;
+    background:#667;
+    color:var(--light-font-color);
+    padding:0.5em;
 }
 div.form-control input:focus, div.form-control textarea:focus {
     outline:1px solid #778;
