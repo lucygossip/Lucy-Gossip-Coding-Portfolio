@@ -24,6 +24,7 @@
     --border-color-two:#48b;
     --gradient-background-color:linear-gradient(90deg, #333, #555);
     --light-font-color:#ddd;
+    --success-font-color:#2f4;
     --main-box-shadow: 4px 4px 2px #222, -1px -1px 3px #222;
 }
 
@@ -71,6 +72,9 @@ hr {
     height:3px;
     background:#111;
 }
+input[type="submit"], button {
+    cursor:pointer;
+}
 
 
 /*----- 2. HEADER -----*/
@@ -78,16 +82,9 @@ div.header-container {
     position:relative;
     overflow:hidden;
     margin-bottom:50px;
-}
-div.header-image {
-    display:none;
-    max-height:600px;
-    overflow:hidden;
-    position:relative;
     background:var(--second-background-color);
 }
 div.header-text {
-    background:var(--second-background-color);
     padding:14px;
     text-align:center;
 }
@@ -100,7 +97,6 @@ div.header-text h2 {
     font-size:1.2rem;
 }
 div.header-info {
-    background:var(--second-background-color);
     padding:0.5em;
     text-align:center;
 }
@@ -109,6 +105,31 @@ div.header-info h3 {
     letter-spacing:0.2em;
     line-height:2em;
     color:#fff;
+}
+div.download-cv {
+    border-radius:50%;
+    box-shadow:var(--main-box-shadow);
+    background:var(--border-color-one);
+    min-width:80px;
+    width:fit-content;
+    aspect-ratio:1;
+    margin:20px auto;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    transition:0.3s ease-in;
+}
+div.cv-text a {
+    padding:10px;
+    font-size:0.8rem;
+    font-weight:bold;
+    color:var(--success-font-color);
+    font-style:italic;
+    background:transparent;
+}
+div.download-cv:hover {
+    background:var(--border-color-two);
 }
 
 /*----- 3. SOCIAL MEDIA BAR -----*/
@@ -134,16 +155,20 @@ div.social-media-image img:hover {
 div.navbar {
     background:var(--second-background-color);
     color:var(--light-font-color);
-    width:fit-content;
     margin:0 auto;
     text-transform:uppercase;
     box-shadow:var(--main-box-shadow);
+    display:flex;
+    justify-content:center;
 }
 div.navbar ul {
     display:flex;
+    flex-direction:column;
+    width:fit-content;
     list-style:none;
     padding:0.5em;
     justify-content:center;
+    text-align:center;
 }
 div.navbar ul li {
     margin:1em;
@@ -222,7 +247,7 @@ div.about-skills ul li:nth-child(2n) {
     background:var(--border-color-two);
 }
 div.about-skills ul li a.success {
-    color:#2f4;
+    color:var(--success-font-color);
     font-weight:bold;
 }
 div.about-skills ul li a.success:hover {
@@ -295,25 +320,20 @@ div.form-control input[type=submit] {
     color:var(--light-font-color);
     padding:0.5em;
 }
+div.form-control textarea {
+    resize:none;
+}
 div.form-control input:focus, div.form-control textarea:focus {
     outline:1px solid #778;
 }
 
 /*----- 6. DESKTOP -----*/
 
-@media only screen and (min-width:1000px) {
-    div.header-image {
-        display:block;
-    }
-    div.header-image img {
-        text-align:left;
-        height:112px;
-    }
+@media only screen and (min-width:680px) {
     div.header-container {
         display:flex;
-    }
-    div.header-text {
-        flex-grow:1;
+        align-items:center;
+        justify-content:space-around;
     }
     div.header-info {
         position:relative;
@@ -321,10 +341,19 @@ div.form-control input:focus, div.form-control textarea:focus {
         top:auto;
         left:auto;
     }
+    div.download-cv {
+        margin:20px;
+    }
     div.social-media-bar {
         flex-direction:row;
         justify-content:center;
         margin-bottom:50px;
+    }
+    div.navbar {
+        width:fit-content;
+    }
+    div.navbar ul {
+        flex-direction:row;
     }
     div.row {
         flex-direction:row;
@@ -339,7 +368,8 @@ div.form-control input:focus, div.form-control textarea:focus {
         width:25%;
     }
     div.light-container {
-        width:1000px;
+        width:90%;
+        max-width:1000px;
         margin:30px auto;
     }
     div.about-skills {
