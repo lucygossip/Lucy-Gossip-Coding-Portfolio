@@ -312,6 +312,7 @@ div.form-control label, div.form-control input[type=text], div.form-control inpu
 }
 div.form-control input[type=text], div.form-control input[type=email], div.form-control textarea {
     background:#556;
+    color:var(--light-font-color);
 }
 div.form-control input[type=submit] {
     display:block;
@@ -319,6 +320,10 @@ div.form-control input[type=submit] {
     background:#667;
     color:var(--light-font-color);
     padding:0.5em;
+    transition:0.3s ease-in;
+}
+div.form-control input[type="submit"]:hover {
+    background:var(--border-color-two);
 }
 div.form-control textarea {
     resize:none;
