@@ -241,19 +241,19 @@
                     <h2>Contact</h2>
                     <p>If you wish to get in touch, please send your enquiry by using the form below.</p>
                     
-                    <form action="" id="contact-form">
+                    <form method="POST" name="contact_form" id="contact-form" action="contact-form-handler.php">
                         <fieldset>
                             <div class="form-control">
                                 <label>Name:</label>
-                                <input type="text">
+                                <input type="text" required>
                             </div>
                             <div class="form-control">
                                 <label>Email:</label>
-                                <input type="email">
+                                <input type="email" required>
                             </div>
                             <div class="form-control">
                                 <label>Message:</label>
-                                <textarea rows="4"></textarea>
+                                <textarea rows="4" required></textarea>
                             </div>
                             <div class="form-control">
                                 <input type="submit" value="Send Message">
