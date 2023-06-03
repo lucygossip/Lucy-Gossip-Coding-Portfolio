@@ -1,3 +1,45 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8" />
+        <link rel="stylesheet" href="../css/style.css"> 
+    </head>
+    <body>
+         <header>
+            <div class="header-container">
+            <div class="header-text">
+            <h1>Lucy Gossip</h1>
+                <h2>Coding Portfolio</h2>
+            </div>
+            <div class="header-info">
+            <h3>Mobile: 07715569242</h3>
+                <h3>Email: lucygossip127@hotmail.com</h3>
+            </div>
+                <div class="download-cv">
+                    <div class="cv-text"><p><a href="">Download CV</a></p></div>
+                    
+                </div>
+                </div>
+        </header>
+        
+        <section id="social-media">
+            <div class="social-media-bar">
+            <div class="social-media-image"><a href="https://twitter.com/lucygossip" target="_blank"><img alt="" src="../img/twitter.png" /></a></div>
+                <div class="social-media-image"><a href="https://www.linkedin.com/in/lucy-gossip-4a71a296/" target="_blank"><img alt="" src="../img/linkedin.png" /></a></div>
+            <div class="social-media-image"><a href="https://github.com/lucygossip" target="_blank"><img alt="" src="../img/github-blue.png" /></a></div>
+            </div>
+        </section>
+        
+        <nav>
+            <div class="navbar">
+            <ul>
+                <li><a href="../index.html" onclick="openTab('about')">Back</a></li>
+            </ul>
+                </div>
+        </nav>
+        
+<div class="light-container">
 <?php
  
 if($_POST) {
@@ -53,3 +95,7 @@ if($_POST) {
     echo '<p>Something went wrong</p>';
 }
 ?>
+    </div>
+    </body>
+    <script type="text/javascript" src="js/myscripts.js"></script>
+    </html>
